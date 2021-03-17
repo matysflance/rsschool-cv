@@ -2,7 +2,7 @@
 
 ## Contact details
 * smatysiak@hotmail.com
-* https://www.linkedin.com/in/smatysiak/
+* [https://www.linkedin.com/in/smatysiak/](https://www.linkedin.com/in/smatysiak/)
 
 ## About me
 I've been working as a Web Developer for 2 years now but unfortunately I did not have any exposure to new technologies at work. I am constantly trying to develop in my spare time, however, it is hard with a little child. One day I would love to become an independent freelancer, live in a small village on Sicily with my family and work remotely for international clients.
