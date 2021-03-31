@@ -122,3 +122,64 @@ h6 {
 .content {
   min-height: calc(100vh - 5rem);
 }
+
+.header {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.header__user-wrapper {
+	height: 8rem;
+	line-height: 8rem;
+	float: left;
+}
+
+.header__avatar {
+	border-radius: 50%;
+	float: left;
+}
+
+.header__user-info {
+	display:inline-block;
+	vertical-align: middle;
+	line-height: 1.6;
+	margin-left: 1.5rem;
+}
+
+.header__user-info h1 {
+	font-weight: 700;
+}
+
+.header__address {
+	float: right;
+	margin-top: 1rem;
+}
+
+.header__address-line {
+	display: block;
+	color: var(--color-white);
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.15rem;
+	will-change: transform;
+	transition: .2s all ease-in-out;
+}
+
+.header__address-line--web {
+	margin-left: 2.2rem;
+}
+
+.header__address-line:hover {
+	transform: rotate(1deg) scale(1.02);
+}
+
+.header__address-icon {
+	margin-right: 1rem;
+}
+
+.header__web-details {
+	margin-top: .7rem;
+	margin-bottom: .7rem;
+}
