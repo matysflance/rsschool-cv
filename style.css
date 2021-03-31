@@ -184,6 +184,94 @@ h6 {
 	margin-bottom: .7rem;
 }
 
+.sidebar {
+	float: left;
+	width: 28%;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem ;
+}
+
+.sidebar__section + .sidebar__section {
+	margin-top: 1.5rem;
+}
+
+.interests__item {
+	list-style: none;
+	float: left;
+}
+
+.interests__item + .interests__item {
+	margin-left: 1.7rem;
+}
+
+.interests__name {
+	text-align: center;
+	margin-top: .7rem;
+	font-weight: 700;
+}
+
+.reference__list {
+
+}
+
+.reference__item {
+	--vertical-gap: 1rem;
+	--pointer-size: 1.2rem;
+	position: relative;
+	
+	margin: 0;
+  padding-bottom: var(--vertical-gap);
+	padding-top: calc(var(--vertical-gap) / 2);
+  padding-left: calc(var(--pointer-size) * 2);
+	list-style: none;
+}
+
+.reference__item::before {
+	background-color: var(--color-grey-light);
+  width: 1px;
+  content: '';
+  position: absolute;
+  left: calc(var(--pointer-size) * .5);
+}
+
+.reference__list .reference__item:nth-of-type(2n+1):before {
+	top: 50%;
+	bottom: 0;
+}
+
+.reference__list .reference__item:nth-of-type(2n)::before {
+	top: 0;
+	bottom: 50%;
+}
+
+.reference__item::after {
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23B4B4B4'/%3E%3Ccircle cx='25.5' cy='25.5' r='7.5' fill='white'/%3E%3C/svg%3E%0A");
+	width: var(--pointer-size);
+	height: var(--pointer-size);
+	position: absolute;
+	top: calc(50% - calc(var(--vertical-gap) * .5));
+	left: calc(var(--pointer-size) * .5);
+	transform: translate(-50%, -50%);
+}
+
+.awards__item {
+	list-style: none;
+	font-weight: 700;
+}
+
+.awards__item + .awards__item {
+	margin-top: .4rem;
+}
+
+.portfolio {
+	float: right;
+	margin-left: 2rem;
+	width: calc(70% - 2rem);
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+
 .footer {
   color: var(--color-white);
   background-color: var(--color-primary);
