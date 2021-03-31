@@ -210,10 +210,6 @@ h6 {
 	font-weight: 700;
 }
 
-.reference__list {
-
-}
-
 .reference__item {
 	--vertical-gap: 1rem;
 	--pointer-size: 1.2rem;
@@ -264,12 +260,51 @@ h6 {
 	margin-top: .4rem;
 }
 
+.card {
+	box-shadow: 0 2px 13px -10px var(--color-grey-dark);
+	will-change: transform;
+	transition: .2s all ease-in-out;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+}
+
+.card__image-wrapper {
+	height: 10.3125rem;
+}
+
+.card__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card__content {
+	background-color: #fff;
+	padding: 1.2rem 1rem;
+	text-align: center;
+	font-size: .9rem;
+}
+
 .portfolio {
 	float: right;
 	margin-left: 2rem;
 	width: calc(70% - 2rem);
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
+}
+
+.portfolio__cards {
+	padding-left: 3rem;
+}
+
+.portfolio__card {
+	float: left;
+	width: calc(50% - 1.2rem);
+	margin-left: .6rem;
+	margin-right: .6rem;
+	margin-bottom: 1.2rem;
 }
 
 .footer {
