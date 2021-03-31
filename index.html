@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RSSchool css-recipes</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="container clearfix">
+            <div class="header__user-wrapper">
+              <figure class="header__user">
+                <img
+                  src="http://unsplash.it/140/140?random&gravity=center"
+                  alt="My photo"
+                  class="header__avatar"
+                />
+                <figcaption class="header__user-info">
+                  <h1>Andrew Smith</h1>
+                  <p role="doc-subtitle">UI/UX Desugner</p>
+                </figcaption>
+              </figure>
+            </div>
+            <address class="header__address">
+              <p class="header__address-line">
+                <span class="fas fa-map-marker-alt header__address-icon"></span
+                >67/B Munshi para Sylhet.
+              </p>
+              <div class="header__web-details">
+                <a class="header__address-line" href="https://itsnuman.com"
+                  ><span class="fas fa-globe header__address-icon"></span
+                  >itsnuman.com</a
+                >
+                <a
+                  href="mailto:jan@mail.com"
+                  class="header__address-line header__address-line--web"
+                  >jan@mail.com</a
+                >
+              </div>
+              <a class="header__address-line" href="tel:+444034534"
+                ><span class="fas fa-phone header__address-icon"></span>+444 034
+                534</a
+              >
+            </address>
+          </div>
+        </header>
+        <main class="main">
+          <div class="container clearfix">
+            <div class="sidebar">
+              <section class="sidebar__section">
+                <h2 class="section-heading sidebar__section-heading">
+                  <div class="icon section-heading__icon">
+                    <span class="fas fa-phone icon__icon"></span>
+                  </div>
+                  Profile Info
+                </h2>
+                <p>
+                  Dolor sit a quam erat volutpat. Ut wisi enim ad minim veniam,
+                  quis nostruduk cipit lobortis nislea quis commodo consequat.
+                  Quis nostruduk cipit lobortis nislea.
+                </p>
+              </section>
+              <section class="sidebar__section awards">
+                <h2 class="section-heading sidebar__section-heading">
+                  <div class="icon section-heading__icon">
+                    <span class="fas fa-phone icon__icon"></span>
+                  </div>
+                  Interests
+                </h2>
+                <ul class="interests__list clearfix">
+                  <li class="interests__item clearfix">
+                    <div class="icon-outline">
+                      <span class="fas fa-phone icon-outline__icon"></span>
+                    </div>
+                    <p class="interests__name">Music</p>
+                  </li>
+                  <li class="interests__item clearfix">
+                    <div class="icon-outline">
+                      <span class="fas fa-phone icon-outline__icon"></span>
+                    </div>
+                    <p class="interests__name">Music</p>
+                  </li>
+                  <li class="interests__item clearfix">
+                    <div class="icon-outline">
+                      <span class="fas fa-phone icon-outline__icon"></span>
+                    </div>
+                    <p class="interests__name">Music</p>
+                  </li>
+                </ul>
+              </section>
+              <section class="sidebar__section reference">
+                <h2 class="section-heading sidebar__section-heading">
+                  <div class="icon section-heading__icon">
+                    <span class="fas fa-phone icon__icon"></span>
+                  </div>
+                  Reference
+                </h2>
+                <ul class="reference__list clearfix">
+                  <li class="reference__item clearfix">
+                    <p>1999 - Present</p>
+                    <p class="highlight">Sheikh Al Rayhan</p>
+                    <p>CEO, DeviserWeb</p>
+                  </li>
+                  <li class="reference__item clearfix">
+                    <p>2000 - 2012</p>
+                    <p class="highlight">Junaed Ahmed Numan</p>
+                    <p>Google Developer</p>
+                  </li>
+                </ul>
+              </section>
+              <section class="sidebar__section awards">
+                <h2 class="section-heading sidebar__section-heading">
+                  <div class="icon section-heading__icon">
+                    <span class="fas fa-phone icon__icon"></span>
+                  </div>
+                  Awwards
+                </h2>
+                <ul class="awards__item">
+                  <li class="awards__item">Illustration award 2009</li>
+                  <li class="awards__item">Web Design award 2012</li>
+                  <li class="awards__item">Elite award 2019</li>
+                </ul>
+              </section>
+            </div>
+            <div class="portfolio">
+              <h2 class="section-heading sidebar__section-heading">
+                <div class="icon section-heading__icon">
+                  <span class="fas fa-phone icon__icon"></span>
+                </div>
+                Portfolio
+              </h2>
+              <div class="portfolio__cards clearfix">
+                <article class="card portfolio__card">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="http://unsplash.it/240/165?random&gravity=center"
+                      alt="Picture showing my work."
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__content">
+                    <h3>Converter Ipod Video</h3>
+                    <p class="card__category">UI/UX Design</p>
+                  </div>
+                </article>
+                <article class="card portfolio__card">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="http://unsplash.it/240/165?random&gravity=center"
+                      alt="Picture showing my work."
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__content">
+                    <h3>Converter Ipod Video</h3>
+                    <p class="card__category">UI/UX Design</p>
+                  </div>
+                </article>
+                <article class="card portfolio__card">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="http://unsplash.it/240/165?random&gravity=center"
+                      alt="Picture showing my work."
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__content">
+                    <h3>Converter Ipod Video</h3>
+                    <p class="card__category">UI/UX Design</p>
+                  </div>
+                </article>
+                <article class="card portfolio__card">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="http://unsplash.it/240/165?random&gravity=center"
+                      alt="Picture showing my work."
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__content">
+                    <h3>Converter Ipod Video</h3>
+                    <p class="card__category">UI/UX Design</p>
+                  </div>
+                </article>
+                <article class="card portfolio__card">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="http://unsplash.it/240/165?random&gravity=center"
+                      alt="Picture showing my work."
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__content">
+                    <h3>Converter Ipod Video</h3>
+                    <p class="card__category">UI/UX Design</p>
+                  </div>
+                </article>
+                <article class="card portfolio__card">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="http://unsplash.it/240/165?random&gravity=center"
+                      alt="Picture showing my work."
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__content">
+                    <h3>Converter Ipod Video</h3>
+                    <p class="card__category">UI/UX Design</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p>
+            You can write to me on
+            <a href="mailto:jan@mail.com" class="footer__link">jan@mail.com</a>
+            or call:
+            <a href="tel:+444034534" class="footer__link">+444 034 534</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
