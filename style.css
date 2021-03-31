@@ -183,3 +183,24 @@ h6 {
 	margin-top: .7rem;
 	margin-bottom: .7rem;
 }
+
+.footer {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  height: 5rem;
+	line-height: 5rem;
+}
+
+.footer__link {
+	color: var(--color-white);
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 700;
+	display: inline-block;
+	will-change: transform;
+	transition: .2s all ease-in-out;
+}
+
+.footer__link:hover {
+	transform: rotate(1deg) scale(1.02);
+}
