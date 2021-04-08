@@ -1,0 +1,13 @@
+.icon {
+	width: rem(20px);
+	height: rem(20px);
+	
+	&--sm {
+		width: rem(23px);
+		height: rem(23px);
+	}
+
+	&--primary {
+		fill: $primary-color;
+	}
+}

@@ -1,0 +1,48 @@
+.navbar {
+	align-items: center;
+	display: flex;
+	padding-bottom: rem(30px);
+	padding-top: rem(30px);
+
+	&__brand {
+		font-family: $font-brand;
+		text-transform: uppercase;
+		
+		&-link {
+			color: $white;
+			font-size: $h2-font-size;
+			text-decoration: none;
+		}
+	}
+
+	&__nav {
+		align-items: center;
+		display: flex;
+		margin-left: auto;
+
+		&-link {
+			color: $white;
+			font-family: $font-navbar;
+			font-size: $nav-link-font-size;
+			margin-left: rem(5px);
+			padding: rem(10px) rem(20px);
+			text-decoration: none;
+		}
+	}
+
+	&__social {
+		display: flex;
+
+		&-link {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			margin-left: rem(5px);
+			margin-right: rem(5px);
+		}
+
+		&-icon {
+			fill: $primary-color;
+		}
+	}
+}
