@@ -1,0 +1,21 @@
+//private variables
+$font-yeseva-one: 'Yeseva One', cursive;
+$font-lato: 'Lato', sans-serif;
+$font-gentium-book-basic: 'Gentium Book Basic', serif;
+$font-open-sans: 'Open Sans', sans-serif;
+
+$gold-color: #cc9900;
+$dark-color: #191919;
+$white-color: #fff;
+
+
+//public variables
+$font-primary: $font-lato; // 400
+$font-headings: $font-yeseva-one;
+$font-brand: $font-yeseva-one;
+$font-navbar: $font-gentium-book-basic; // 700
+$font-forms: $font-open-sans; // 400
+
+$primary-color: $gold-color;
+$secondary-color: $dark-color;
+$white: $white-color;

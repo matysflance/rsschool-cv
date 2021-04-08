@@ -1,0 +1,2 @@
+*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}img,picture{max-width:100%;display:block}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}input,button,textarea,select{font:inherit}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-family:var(--font-primary);font-weight:500}h1--primary,.h1--primary,h2--primary,.h2--primary,h3--primary,.h3--primary,h4--primary,.h4--primary,h5--primary,.h5--primary,h6--primary,.h6--primary{color:red}
+/*# sourceMappingURL=main.min.css.map */
