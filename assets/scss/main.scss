@@ -1,9 +1,11 @@
 // base
+@import "base/base";
 @import "base/reset";
 @import "base/typography";
 
 // abstracts
 @import "abstracts/variables";
+@import "abstracts/functions";
 
 // layout
 @import "layout/header";
