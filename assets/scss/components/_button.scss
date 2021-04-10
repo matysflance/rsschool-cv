@@ -1,0 +1,80 @@
+.btn {
+	border: none;
+	display: inline-flex;
+	font-size: rem(16px);
+	min-height: 47px;
+	padding: 0.6em 2.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 220ms all ease-in-out;
+  align-items: center;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: $font-btn;
+  justify-content: center;
+  line-height: 1.1;
+
+	&--primary {
+		background-color: $primary-color;
+  	color: $primary-text-color;
+		
+		&:focus {
+			box-shadow: 0 0 0 4px scale-color($primary-color, $lightness: -40%);
+			outline-color: transparent;
+			outline-style: solid;
+		}
+	
+		&:hover,
+		&:active {
+			background-color: scale-color($primary-color, $lightness: -20%);
+		}
+	}
+
+	&--secondary {
+		background-color: rgba($secondary-color, .7);
+  	color: $secondary-text-color;
+		
+		&:focus {
+			box-shadow: 0 0 0 4px $secondary-color;
+			outline-color: transparent;
+			outline-style: solid;
+		}
+	
+		&:hover,
+		&:active {
+			background-color: scale-color($secondary-color, $lightness: -20%);
+		}
+	}
+
+	&--light {
+		background-color: rgba($white, .28);
+  	color: $white;
+		
+		&:focus {
+			box-shadow: 0 0 0 4px scale-color($white, $lightness: -40%);
+			outline-color: transparent;
+			outline-style: solid;
+		}
+	
+		&:hover,
+		&:active {
+			background-color: rgba($white, .8);
+			color: scale-color($dark-color, $lightness: 10%);
+		}
+	}
+
+	&--sm {
+		font-family: $font-btn-sm;
+		font-size: rem(16px);
+		min-height: 35px;
+		padding: 0.4em 3.8em;
+		text-transform: none;
+	}
+
+	&--lg {
+		font-size: rem(18px);
+		min-height: 55px;
+		padding: 0.7em 2.9em;
+	}
+}
