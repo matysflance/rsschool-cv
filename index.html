@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans:ital@1&family=Yeseva+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans:ital@0;1&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,7 +21,8 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
+        <img src="./assets/images/bg-hero.jpg" alt="" class="header__bg" />
+        <div class="container header__container">
           <div class="navbar">
             <h1 class="navbar__brand">
               <a href="/" class="navbar__brand-link">Lambda</a>
@@ -54,12 +55,19 @@
               </a>
             </div>
           </div>
-          <div class="hero">
-            <h2 class="hero__heading">
-              The right ingredients for the right food
-            </h2>
+          <div class="hero header__hero">
+            <div class="decorated-heading">
+              <h2 class="hero__heading decorated-heading__heading">
+                The right ingredients for the right food
+              </h2>
+              <img
+                src="./assets/images/decor-hero.svg"
+                alt=""
+                class="decorated-heading__decoration decorated-heading__decoration--sm"
+              />
+            </div>
             <div class="hero__cta">
-              <a href="#reservation" class="btn btn--dark btn--lg"
+              <a href="#reservation" class="btn btn--secondary btn--lg"
                 >Book a table</a
               >
               <a href="#menu" class="btn btn--light btn--lg">See the menu</a>

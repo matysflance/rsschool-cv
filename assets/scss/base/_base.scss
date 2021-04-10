@@ -4,8 +4,23 @@
 }
 
 .container {
+	width: 100%;
 	max-width: rem(1250px);
 	margin: 0 auto;
 	padding-left: rem(18px);
 	padding-right: rem(18px);
+}
+
+.decorated-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__decoration {
+		margin-top: rem(25px);
+
+		&--sm {
+			width: rem(230px);
+		}
+	}
 }
