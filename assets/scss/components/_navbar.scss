@@ -1,10 +1,9 @@
 .navbar {
-	align-items: center;
 	display: flex;
-	padding-bottom: rem(30px);
-	padding-top: rem(30px);
+	height: rem(110px);
 
 	&__brand {
+		align-self: center;
 		font-family: $font-brand;
 		text-transform: uppercase;
 		
@@ -12,25 +11,61 @@
 			color: $white;
 			font-size: $h2-font-size;
 			text-decoration: none;
+			transition: 110ms all ease-in-out;
+
+			&:hover {
+				color: scale-color($primary-color, $lightness: 20%);
+			}
 		}
 	}
 
 	&__nav {
-		align-items: center;
 		display: flex;
 		margin-left: auto;
 
 		&-link {
+			align-items: center;
 			color: $white;
+			display: flex;
 			font-family: $font-navbar;
 			font-size: $nav-link-font-size;
-			margin-left: rem(5px);
-			padding: rem(10px) rem(20px);
+			justify-content: center;
+			letter-spacing: .6px;
+			margin-left: rem(16px);
+			padding: rem(10px) rem(17px);
+			position: relative;
 			text-decoration: none;
+
+			&:hover:not(&--active),
+			&--active {
+				&::before {
+					content: "";
+					height: 3px;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+			}
+
+			&:hover:not(&--active) {
+				color: scale-color($primary-color, $lightness: 20%);
+
+				&::before {
+					background-color: rgba($white, .28);
+				}
+			}
+
+			&--active {
+				&::before {
+					background-color: rgba($white, .71);
+				}
+			}
 		}
 	}
 
 	&__social {
+		align-self: center;
 		display: flex;
 
 		&-link {
@@ -39,10 +74,6 @@
 			justify-content: center;
 			margin-left: rem(5px);
 			margin-right: rem(5px);
-		}
-
-		&-icon {
-			fill: $primary-color;
 		}
 	}
 }

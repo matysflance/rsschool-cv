@@ -146,17 +146,16 @@ h6, h6 {
 }
 
 .navbar {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1.875rem;
-  padding-top: 1.875rem;
+  height: 6.875rem;
 }
 
 .navbar__brand {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-family: "Yeseva One", cursive;
   text-transform: uppercase;
 }
@@ -165,12 +164,15 @@ h6, h6 {
   color: #fff;
   font-size: 2.25rem;
   text-decoration: none;
+  -webkit-transition: 110ms all ease-in-out;
+  transition: 110ms all ease-in-out;
+}
+
+.navbar__brand-link:hover {
+  color: #ffc20a;
 }
 
 .navbar__nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,15 +180,49 @@ h6, h6 {
 }
 
 .navbar__nav-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Gentium Book Basic", serif;
   font-size: 1.31rem;
-  margin-left: 0.3125rem;
-  padding: 0.625rem 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .6px;
+  margin-left: 1rem;
+  padding: 0.625rem 1.0625rem;
+  position: relative;
   text-decoration: none;
 }
 
+.navbar__nav-link:hover:not(.navbar__nav-link--active)::before, .navbar__nav-link--active::before {
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.navbar__nav-link:hover:not(.navbar__nav-link--active) {
+  color: #ffc20a;
+}
+
+.navbar__nav-link:hover:not(.navbar__nav-link--active)::before {
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.navbar__nav-link--active::before {
+  background-color: rgba(255, 255, 255, 0.71);
+}
+
 .navbar__social {
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,10 +240,6 @@ h6, h6 {
           justify-content: center;
   margin-left: 0.3125rem;
   margin-right: 0.3125rem;
-}
-
-.navbar__social-icon {
-  fill: #cc9900;
 }
 
 .hero {
@@ -335,16 +367,22 @@ h6, h6 {
 }
 
 .icon {
-  width: 1.25rem;
   height: 1.25rem;
+  -webkit-transition: 110ms all ease-in-out;
+  transition: 110ms all ease-in-out;
+  width: 1.25rem;
 }
 
 .icon--sm {
-  width: 1.4375rem;
   height: 1.4375rem;
+  width: 1.4375rem;
 }
 
 .icon--primary {
   fill: #cc9900;
+}
+
+.icon--primary:hover {
+  fill: #fff;
 }
 /*# sourceMappingURL=main.css.map */
