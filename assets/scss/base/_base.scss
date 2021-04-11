@@ -19,13 +19,25 @@
 	&__decoration {
 		margin-top: rem(25px);
 
+		&--primary {
+			color: $primary-color;
+		}
+
+		&--light {
+			color: $white;
+		}
+
 		&--sm {
 			width: rem(230px);
 		}
 	}
 }
 
-.py {
+.py-4 {
+	padding-top: rem(40px);
+	padding-bottom: rem(40px);
+}
+.py-5 {
 	padding-top: rem(70px);
 	padding-bottom: rem(70px);
 }

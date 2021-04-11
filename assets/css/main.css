@@ -28,11 +28,24 @@
   margin-top: 1.5625rem;
 }
 
+.decorated-heading__decoration--primary {
+  color: #cc9900;
+}
+
+.decorated-heading__decoration--light {
+  color: #fff;
+}
+
 .decorated-heading__decoration--sm {
   width: 14.375rem;
 }
 
-.py {
+.py-4 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-5 {
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
 }
@@ -68,6 +81,11 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
 }
 
 h1, .h1,
@@ -142,7 +160,8 @@ h6, .h6 {
 }
 
 .about {
-  background-color: rgba(0, 128, 0, 0.541);
+  background-image: url("/assets/images/bg-about-pattern.png"), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.08)));
+  background-image: url("/assets/images/bg-about-pattern.png"), linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.08));
 }
 
 .about__wrapper {
@@ -155,6 +174,37 @@ h6, .h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
+  padding: 3.4375rem 0.9375rem 1.5625rem 5.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__heading {
+  color: #cc9900;
+}
+
+.about__heading-decoration {
+  margin-top: 0.625rem;
+}
+
+.about__text {
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 1.5625rem;
+}
+
+.about__portrait {
+  margin-top: 2.5rem;
+  -webkit-transform: translateX(1.5625rem);
+          transform: translateX(1.5625rem);
 }
 
 .about__image-wrapper {

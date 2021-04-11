@@ -1,12 +1,38 @@
 .about {
-	background-color: rgba(0, 128, 0, 0.541);
+	background-image: url("/assets/images/bg-about-pattern.png"),
+      linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+
 	&__wrapper {
 		display: flex;
 	}
 
 	&__about {
 		flex: 0 0 45%;
+		padding: rem(55px) rem(15px) rem(25px) rem(95px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+
+	&__heading {
+		color: $primary-color;
+
+		&-decoration {
+			margin-top: rem(10px);
+		}
+	}
+
+	&__text {
+		line-height: 1.4;
+		text-align: center;
+		margin-top: rem(25px);
+	}
+
+	&__portrait {
+		margin-top: rem(40px);
+		transform: translateX(rem(25px));
+	}
+	
 	&__image-wrapper {
 		flex: 0 0 auto;
 	}
