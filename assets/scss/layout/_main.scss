@@ -1,0 +1,13 @@
+.about {
+	background-color: rgba(0, 128, 0, 0.541);
+	&__wrapper {
+		display: flex;
+	}
+
+	&__about {
+		flex: 0 0 45%;
+	}
+	&__image-wrapper {
+		flex: 0 0 auto;
+	}
+}

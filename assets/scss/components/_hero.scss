@@ -4,7 +4,6 @@
 	justify-content: center;
 	align-items: center;
 	color: $white;
-	font-family: $font-brand;
 	text-transform: lowercase;
 	padding: rem(100px) rem(120px);
 	
@@ -17,7 +16,7 @@
 	&__cta {
 		margin-top: rem(35px);
 		margin-bottom: rem(40px);
-		
+
 		.btn {
 			margin-left: rem(12px);
 			margin-right: rem(12px);
