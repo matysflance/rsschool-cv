@@ -11,6 +11,10 @@
 		font-size: $hero-heading-font-size;
 		text-align: center;
 		line-height: 1.3;
+		
+		&-decoration {
+			margin-top: rem(25px);
+		}
 	}
 
 	&__cta {

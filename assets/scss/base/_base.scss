@@ -17,7 +17,7 @@
 	align-items: center;
 
 	&__decoration {
-		margin-top: rem(25px);
+		margin-top: rem(10px);
 
 		&--primary {
 			color: $primary-color;
@@ -38,6 +38,18 @@
 	padding-bottom: rem(40px);
 }
 .py-5 {
+	padding-top: rem(50px);
+	padding-bottom: rem(50px);
+}
+.py-6 {
+	padding-top: rem(60px);
+	padding-bottom: rem(60px);
+}
+.py-7 {
 	padding-top: rem(70px);
 	padding-bottom: rem(70px);
+}
+.py-8 {
+	padding-top: rem(80px);
+	padding-bottom: rem(80px);
 }
