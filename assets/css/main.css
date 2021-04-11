@@ -25,7 +25,7 @@
 }
 
 .decorated-heading__decoration {
-  margin-top: 1.5625rem;
+  margin-top: 0.625rem;
 }
 
 .decorated-heading__decoration--primary {
@@ -40,14 +40,19 @@
   width: 14.375rem;
 }
 
-.py-4 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-sm {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 
-.py-5 {
-  padding-top: 4.375rem;
-  padding-bottom: 4.375rem;
+.py-md {
+  padding-top: 4.6875rem;
+  padding-bottom: 4.6875rem;
+}
+
+.py-lg {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 *,
@@ -162,6 +167,8 @@ h6, .h6 {
 .about {
   background-image: url("/assets/images/bg-about-pattern.png"), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.08)));
   background-image: url("/assets/images/bg-about-pattern.png"), linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.08));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .about__wrapper {
@@ -211,6 +218,49 @@ h6, .h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+.ingredients {
+  background-image: url("/assets/images/bg-ingredients.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.ingredients__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ingredients__content {
+  padding: 4.375rem;
+  background-color: rgba(25, 25, 25, 0.67);
+  width: 47%;
+}
+
+.ingredients__text {
+  text-align: center;
+  margin-top: 2.1875rem;
+}
+
+.ingredients__ingredients {
+  margin-top: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ingredients__ingredient {
+  width: 6.5625rem;
+  height: 6.5625rem;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.09);
 }
 
 .navbar {
@@ -333,6 +383,10 @@ h6, .h6 {
   font-size: 5.625rem;
   text-align: center;
   line-height: 1.3;
+}
+
+.hero__heading-decoration {
+  margin-top: 1.5625rem;
 }
 
 .hero__cta {

@@ -33,23 +33,17 @@
 	}
 }
 
-.py-4 {
-	padding-top: rem(40px);
-	padding-bottom: rem(40px);
-}
-.py-5 {
+.py-sm {
 	padding-top: rem(50px);
 	padding-bottom: rem(50px);
 }
-.py-6 {
-	padding-top: rem(60px);
-	padding-bottom: rem(60px);
+
+.py-md {
+	padding-top: rem(75px);
+	padding-bottom: rem(75px);
 }
-.py-7 {
-	padding-top: rem(70px);
-	padding-bottom: rem(70px);
-}
-.py-8 {
-	padding-top: rem(80px);
-	padding-bottom: rem(80px);
+
+.py-lg {
+	padding-top: rem(100px);
+	padding-bottom: rem(100px);
 }

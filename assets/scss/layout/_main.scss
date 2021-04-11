@@ -1,6 +1,8 @@
 .about {
 	background-image: url("/assets/images/bg-about-pattern.png"),
       linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+	padding-top: rem(40px);
+	padding-bottom: rem(40px);
 
 	&__wrapper {
 		display: flex;
@@ -35,5 +37,42 @@
 	
 	&__image-wrapper {
 		flex: 0 0 auto;
+	}
+}
+
+
+.ingredients {
+	background-image: url("/assets/images/bg-ingredients.jpg");
+	background-position: center;
+	background-size: cover;
+	color: $white;
+
+	&__wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__content {
+		padding: rem(70px);
+		background-color: rgba($dark-color, .67);
+		width: 47%;
+	}
+
+	&__text {
+		text-align: center;
+		margin-top: rem(35px);
+	}
+
+	&__ingredients {
+		margin-top: rem(60px);
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__ingredient {
+		width: rem(105px);
+		height: rem(105px);
+		border-radius: 50%;
+		border: 5px solid rgba($white, .09);
 	}
 }
