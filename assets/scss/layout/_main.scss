@@ -76,3 +76,84 @@
 		border: 5px solid rgba($white, .09);
 	}
 }
+
+
+.menu {
+	background-image: url("/assets/images/bg-menu-pattern.png"),
+      linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+			
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	&__section {
+		flex: 0 1 38%;
+		margin-bottom: rem(30px);
+
+		&:last-child {
+			margin-top: -95px;
+		}
+	}
+
+	&__heading {
+		color: $primary-color;
+		margin-bottom: rem(15px);
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		list-style: none;
+		// width: 450px;
+		padding: rem(4px) rem(10px);
+		margin-bottom: rem(20px);
+		position: relative;
+
+		&--featured {
+			border: 1px solid $primary-color;
+			border-bottom-color: transparent;
+		}
+
+		&-promo-label {
+			align-self: center;
+			min-width: rem(70px);
+			background-color: $primary-color;
+			color: $white;
+			font-size: rem(14px);
+			font-family: $font-primary;
+			text-align: center;
+			padding: 0 rem(5px);
+			position: absolute;
+			right: -1px;
+			top: 0;
+			transform: translateY(-100%);
+			border: 1px solid $primary-color;
+		}
+
+		&-heading {
+			color: $primary-color;
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: rem(5px);
+			border-bottom: 1px solid $primary-color;
+			margin-bottom: rem(9px);
+		}
+
+		&-name {
+
+		}
+
+		&-price {
+
+		}
+
+		&-description {
+
+		}
+	}
+}
