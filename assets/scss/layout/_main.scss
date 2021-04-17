@@ -99,7 +99,6 @@
 
 	&__heading {
 		color: $primary-color;
-		margin-bottom: rem(15px);
 	}
 
 	&__list {
@@ -154,6 +153,53 @@
 
 		&-description {
 
+		}
+	}
+}
+
+
+.reviews {
+	background-image: url("/assets/images/bg-reviews.jpg");
+	background-position: center;
+	background-size: cover;
+	color: $white;
+	display: grid;
+	place-items: center;
+
+	&__content {
+		background-color: rgba($dark-color, .67);
+		width: 48%;
+		padding: rem(70px);
+		padding-bottom: rem(100px);
+	}
+
+	&__quote {
+		font-family: $font-navbar;
+		font-weight: 700;
+		font-size: rem(24px);
+		line-height: 1.9;
+		letter-spacing: 1px;
+		position: relative;
+
+		&::before {
+			content: "\201C";
+			position: absolute;
+			top: rem(30px);
+			left: rem(-40px);
+			font-size: rem(80px);
+			opacity: .4;
+			line-height: 0;
+		}
+	}
+
+	&__author {
+		font-size: rem(20px);
+		text-align: center;
+		margin-top: rem(30px);
+
+		&::before {
+			content: "-";
+			margin-right: rem(10px);
 		}
 	}
 }

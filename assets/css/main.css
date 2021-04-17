@@ -22,6 +22,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0.9375rem;
 }
 
 .decorated-heading__decoration {
@@ -291,7 +292,6 @@ h6, .h6 {
 
 .menu__heading {
   color: #cc9900;
-  margin-bottom: 0.9375rem;
 }
 
 .menu__list {
@@ -341,6 +341,53 @@ h6, .h6 {
   padding-bottom: 0.3125rem;
   border-bottom: 1px solid #cc9900;
   margin-bottom: 0.5625rem;
+}
+
+.reviews {
+  background-image: url("/assets/images/bg-reviews.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.reviews__content {
+  background-color: rgba(25, 25, 25, 0.67);
+  width: 48%;
+  padding: 4.375rem;
+  padding-bottom: 6.25rem;
+}
+
+.reviews__quote {
+  font-family: "Gentium Book Basic", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.reviews__quote::before {
+  content: "\201C";
+  position: absolute;
+  top: 1.875rem;
+  left: -2.5rem;
+  font-size: 5rem;
+  opacity: .4;
+  line-height: 0;
+}
+
+.reviews__author {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+.reviews__author::before {
+  content: "-";
+  margin-right: 0.625rem;
 }
 
 .navbar {
