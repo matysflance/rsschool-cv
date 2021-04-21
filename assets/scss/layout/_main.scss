@@ -203,3 +203,80 @@
 		}
 	}
 }
+
+
+.reservation {
+	background-image: url("/assets/images/bg-about-pattern.png"),
+      linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+	padding-top: rem(100px);
+	padding-bottom: rem(100px);
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__images {
+		display: flex;
+		flex: 0 0 auto;
+
+		img + img {
+			margin-left: rem(30px);
+		}
+	}
+
+	&__content {
+		flex: 1;
+		padding-left: rem(100px);
+		padding-right: rem(100px);
+		text-align: center;
+	}
+
+	&__text {
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+
+		p + p {
+			margin-top: rem(10px);
+		}
+	}
+
+	&__form {
+		&-fields {
+			margin-top: rem(35px);
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			/* This is better for small screens, once min() is better supported */
+			/* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+			grid-gap: rem(25px);
+		}
+	}
+
+	&__submit {
+		margin-top: rem(30px);
+	}
+}
+
+.form {
+	font-family: $font-forms;
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		text-align: left;
+		color: $primary-color;
+		font-weight: 700;
+		font-size: rem(14px);
+		margin-bottom: rem(5px);
+	}
+
+	&__control {
+		flex: 1;
+		font-style: italic;
+		color: #7c7c7c;
+		padding: rem(3px) rem(10px);
+	}
+}
+

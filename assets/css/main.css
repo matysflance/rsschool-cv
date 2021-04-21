@@ -390,6 +390,96 @@ h6, .h6 {
   margin-right: 0.625rem;
 }
 
+.reservation {
+  background-image: url("/assets/images/bg-about-pattern.png"), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.08)));
+  background-image: url("/assets/images/bg-about-pattern.png"), linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.08));
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.reservation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reservation__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.reservation__images img + img {
+  margin-left: 1.875rem;
+}
+
+.reservation__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  text-align: center;
+}
+
+.reservation__text {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.reservation__text p + p {
+  margin-top: 0.625rem;
+}
+
+.reservation__form-fields {
+  margin-top: 2.1875rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  grid-gap: 1.5625rem;
+}
+
+.reservation__submit {
+  margin-top: 1.875rem;
+}
+
+.form {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__label {
+  text-align: left;
+  color: #cc9900;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 0.3125rem;
+}
+
+.form__control {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-style: italic;
+  color: #7c7c7c;
+  padding: 0.1875rem 0.625rem;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
