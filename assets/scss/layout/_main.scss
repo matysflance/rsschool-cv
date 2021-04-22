@@ -280,3 +280,40 @@
 	}
 }
 
+.footer {
+	background-color: $dark-color;
+	color: $white-color;
+	font-family: $font-primary-alt;
+	
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(200px, 1fr));
+		column-gap: rem(50px);
+	}
+
+	&__section {
+		text-align: center;
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__heading {
+		color: $white-color;
+	}
+
+	&__logos {
+		margin-top: auto;
+	}
+
+	&__logo {
+		margin-left: rem(4px);
+		margin-right: rem(4px);
+	}
+
+	&__address {
+		font-style: normal;
+		font-weight: 700;
+	}
+}

@@ -3,6 +3,11 @@
 	transition: 110ms all ease-in-out;
 	width: rem(20px);
 	
+	&--xs {
+		height: rem(17px);
+		width: rem(17px);
+	}
+
 	&--sm {
 		height: rem(23px);
 		width: rem(23px);
@@ -13,6 +18,14 @@
 
 		&:hover {
 			fill: $white;
+		}
+	}
+
+	&--light {
+		fill: $white-color;
+
+		&:hover {
+			fill: $primary-color;
 		}
 	}
 }
