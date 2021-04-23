@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400&family=Lato&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/main.min.css" />
+    <title>RSSchool restaurant-layout</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <img src="./assets/images/bg-hero.jpg" alt="" class="header__bg" />
+          <div class="container header__container">
+            <div class="navbar">
+              <h1 class="navbar__brand">
+                <a href="/" class="navbar__brand-link">Lambda</a>
+              </h1>
+              <nav class="navbar__nav">
+                <a href="/" class="navbar__nav-link navbar__nav-link--active"
+                  >Home</a
+                >
+                <a href="#about" class="navbar__nav-link">About</a>
+                <a href="#ingredients" class="navbar__nav-link">Ingredients</a>
+                <a href="#menu" class="navbar__nav-link">Menu</a>
+                <a href="#reviews" class="navbar__nav-link">Reviews</a>
+                <a href="#reservation" class="navbar__nav-link">Reservations</a>
+              </nav>
+              <div class="navbar__social">
+                <a href="" class="navbar__social-link">
+                  <svg class="icon icon--sm icon--primary">
+                    <use
+                      href="./assets/icons/symbol-defs.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="" class="navbar__social-link">
+                  <svg class="icon icon--sm icon--primary">
+                    <use
+                      href="./assets/icons/symbol-defs.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="" class="navbar__social-link">
+                  <svg class="icon icon--sm icon--primary">
+                    <use
+                      href="./assets/icons/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="hero header__hero">
+              <div class="decorated-heading">
+                <h2 class="hero__heading decorated-heading__heading">
+                  The right ingredients for the right food
+                </h2>
+                <img
+                  src="./assets/images/decor-hero.svg"
+                  alt=""
+                  class="decorated-heading__decoration decorated-heading__decoration--sm hero__heading-decoration"
+                />
+              </div>
+              <div class="hero__cta">
+                <a href="#reservation" class="btn btn--secondary btn--lg"
+                  >Book a table</a
+                >
+                <a href="#menu" class="btn btn--light btn--lg">See the menu</a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section id="about" class="about">
+          <div class="container about__wrapper">
+            <div class="about__about">
+              <div class="decorated-heading">
+                <h3 class="h2 about__heading decorated-heading">
+                  Just the right food
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--primary about__heading-decoration"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p class="about__text">
+                If you’ve been to one of our restaurants, you’ve seen – and
+                tasted – what keeps our customers coming back for more. Perfect
+                materials and freshly baked food, delicious Lambda cakes,
+                muffins, and gourmet coffees make us hard to resist! Stop in
+                today and check us out!
+              </p>
+              <img
+                src="./assets/images/cook.png"
+                alt="Our expert cook decorating one of our specials and his signature"
+                class="about__portrait"
+              />
+            </div>
+            <div class="about__image-wrapper">
+              <img
+                src="./assets/images/plate-dish.png"
+                alt="Beautiful steak with carrots, mushrooms and other vegetables served on white plate."
+                class="about__image"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="ingredients" class="ingredients py-lg">
+          <div class="container ingredients__wrapper">
+            <div class="ingredients__content">
+              <div class="decorated-heading">
+                <h3 class="h2 decorated-heading__heading">Fine ingredients</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--light ingredients__heading-decoration"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p class="ingredients__text">
+                If you’ve been to one of our restaurants, you’ve seen – and
+                tasted – what keeps our customers coming back for more. Perfect
+                materials and freshly baked food, delicious Lambda cakes,
+                muffins, and gourmet coffees make us hard to resist! Stop in
+                today and check us out!
+              </p>
+              <div class="ingredients__ingredients">
+                <img
+                  src="./assets/images/ingredients-1.jpg"
+                  alt="Wheat"
+                  class="ingredients__ingredient"
+                />
+                <img
+                  src="./assets/images/ingredients-2.jpg"
+                  alt="Some red ingredient - wasn't sure what this is - it will need to be updated."
+                  class="ingredients__ingredient"
+                />
+                <img
+                  src="./assets/images/ingredients-3.jpg"
+                  alt="Home-made bakery"
+                  class="ingredients__ingredient"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="menu" class="menu py-lg">
+          <div class="container menu__wrapper">
+            <section class="menu__section">
+              <div class="decorated-heading menu__heading">
+                <h3 class="h2 decorated-heading__heading">Appetisers</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--primary ingredients__heading-decoration"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Tzatsiki</span>
+                    <span class="menu__item-price">$3.99</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Refreshing traditional cucumber and garlic yohgurt dip.
+                  </p>
+                </li>
+                <li class="menu__item menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Aubergine Salad</span>
+                    <span class="menu__item-price">$5.50</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Aubergine Salad</span>
+                    <span class="menu__item-price">$5.25</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="menu__section">
+              <div class="decorated-heading menu__heading">
+                <h3 class="h2 decorated-heading__heading">Starters</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--primary ingredients__heading-decoration"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Haloumi</span>
+                    <span class="menu__item-price">$3.99</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Refreshing traditional cucumber and garlic yohgurt dip.
+                  </p>
+                </li>
+                <li class="menu__item menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Spinach Pie</span>
+                    <span class="menu__item-price">$5.50</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="menu__section">
+              <div class="decorated-heading menu__heading">
+                <h3 class="h2 decorated-heading__heading">Salads</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--primary ingredients__heading-decoration"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Olive special</span>
+                    <span class="menu__item-price">$5.99</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Refreshing traditional cucumber and garlic yohgurt dip.
+                  </p>
+                </li>
+                <li class="menu__item menu__item--featured">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-promo-label">Special</span>
+                    <span class="menu__item-name">Greek Salad</span>
+                    <span class="menu__item-price">$5.50</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Gusto Salad</span>
+                    <span class="menu__item-price">$5.25</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="menu__section">
+              <div class="decorated-heading menu__heading">
+                <h3 class="h2 decorated-heading__heading">Main Dishes</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--primary ingredients__heading-decoration"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Cornish Mackerel</span>
+                    <span class="menu__item-price">$5.99</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Refreshing traditional cucumber and garlic yohgurt dip.
+                  </p>
+                </li>
+                <li class="menu__item menu__item--featured">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-promo-label">Special</span>
+                    <span class="menu__item-name">Roast Lamb</span>
+                    <span class="menu__item-price">$5.50</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+
+                <li class="menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Fried Chicken</span>
+                    <span class="menu__item-price">$5.25</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Pureed eggplant, garlic, green pepper and tomato dip.
+                  </p>
+                </li>
+                <li class="menu__item menu__item">
+                  <h4 class="menu__item-heading">
+                    <span class="menu__item-name">Pastitsio</span>
+                    <span class="menu__item-price">$5.99</span>
+                  </h4>
+                  <p class="menu__item-description">
+                    Refreshing traditional cucumber and garlic yohgurt dip.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <section id="reviews" class="reviews py-lg">
+          <div class="reviews__content">
+            <div class="decorated-heading reviews__heading">
+              <h3 class="h2 decorated-heading__heading">Guest Reviews</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 624 65"
+                class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--light"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: currentColor;
+                  }
+                  .shp1 {
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-linecap: round;
+                    stroke-width: 4;
+                  }
+                </style>
+                <g id="Layer 1">
+                  <g id="decoration 4 1 ">
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                      />
+                    </g>
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                      />
+                    </g>
+                    <path
+                      id="&lt;Path&gt;"
+                      class="shp1"
+                      d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <figure class="reviews__review">
+              <blockquote class="reviews__quote">
+                <p>
+                  If you’ve been to one of our restaurants, you’ve seen – and
+                  tasted – what keeps our customers coming back for more.
+                  Perfect materials and freshly baked food, delicious Lambda
+                  cakes, muffins, and gourmet coffees make us hard to resist!
+                  Stop in today and check us out!
+                </p>
+              </blockquote>
+              <figcaption class="reviews__author">
+                food inc, New York
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="reservation" id="reservation">
+          <div class="container reservation__wrapper">
+            <div class="reservation__images">
+              <img
+                src="./assets/images/dish1.jpg"
+                alt="Pork with beans and some oats"
+              />
+              <img
+                src="./assets/images/dish2.jpg"
+                alt="Muesli with cherries and strawberries."
+              />
+            </div>
+            <div class="reservation__content">
+              <div class="decorated-heading menu__heading">
+                <h3 class="h2 decorated-heading__heading">
+                  Just the right food
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 624 65"
+                  class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--primary"
+                >
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+                    .shp0 {
+                      fill: currentColor;
+                    }
+                    .shp1 {
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g id="Layer 1">
+                    <g id="decoration 4 1 ">
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                        />
+                      </g>
+                      <g id="&lt;Group&gt;">
+                        <path
+                          id="&lt;Path&gt;"
+                          class="shp0"
+                          d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                        />
+                      </g>
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp1"
+                        d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="reservation__text">
+                <p>
+                  If you’ve been to one of our restaurants, you’ve seen – and
+                  tasted – what keeps our customers coming back for more.
+                  Perfect materials and freshly baked food.
+                </p>
+                <p>
+                  Delicious Lambda cakes, muffins, and gourmet coffees make us
+                  hard to resist! Stop in today and check us out! Perfect
+                  materials and freshly baked food.
+                </p>
+              </div>
+              <form class="reservation__form form">
+                <div class="reservation__form-fields">
+                  <div class="form-group form__group">
+                    <label for="booking-name" class="form__label">Name</label>
+                    <input
+                      type="text"
+                      class="form__control"
+                      placeholder="your name *"
+                      id="booking-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group form__group">
+                    <label for="booking-email" class="form__label">Email</label>
+                    <input
+                      type="email"
+                      class="form__control"
+                      placeholder="your email *"
+                      id="booking-email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group form__group">
+                    <label for="booking-date" class="form__label">Date</label>
+                    <input
+                      type="date"
+                      class="form__control"
+                      placeholder="date *"
+                      id="booking-date"
+                      required
+                    />
+                  </div>
+                  <div class="form-group form__group">
+                    <label for="booking-party-number" class="form__label"
+                      >Party number</label
+                    >
+                    <select
+                      id="booking-party-number"
+                      class="form__control"
+                      required
+                    >
+                      <option value="">Party number</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn--primary btn--sm reservation__submit"
+                >
+                  Book now!
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer py-sm">
+        <div class="container footer__wrapper">
+          <section class="footer__section">
+            <div class="decorated-heading footer__heading">
+              <h3 class="h4 decorated-heading__heading">About Us</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 624 65"
+                class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--light"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: currentColor;
+                  }
+                  .shp1 {
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-linecap: round;
+                    stroke-width: 4;
+                  }
+                </style>
+                <g id="Layer 1">
+                  <g id="decoration 4 1 ">
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                      />
+                    </g>
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                      />
+                    </g>
+                    <path
+                      id="&lt;Path&gt;"
+                      class="shp1"
+                      d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p>
+              Lambda's new and expanded Chelsea location represents a truly
+              authentic <strong>Greek</strong> patisserie, featuring breakfasts
+              of fresh croissants and steaming bowls of café.
+            </p>
+            <p>Lamda the best restaurant in town</p>
+          </section>
+          <section class="footer__section">
+            <div class="decorated-heading footer__heading">
+              <h3 class="h4 decorated-heading__heading">Opening Hours</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 624 65"
+                class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--light"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: currentColor;
+                  }
+                  .shp1 {
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-linecap: round;
+                    stroke-width: 4;
+                  }
+                </style>
+                <g id="Layer 1">
+                  <g id="decoration 4 1 ">
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                      />
+                    </g>
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                      />
+                    </g>
+                    <path
+                      id="&lt;Path&gt;"
+                      class="shp1"
+                      d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p>
+              <span class="footer__opening-days">Mon-Thu</span>
+              <span class="footer__opening-times">7:00am-8:00pm</span>
+            </p>
+            <p>
+              <span class="footer__opening-days">Fri-Sun</span>
+              <span class="footer__opening-times">7:00am-10:00pm</span>
+            </p>
+            <div class="footer__logos">
+              <svg class="icon icon--sm icon--light footer__logo">
+                <use href="./assets/icons/symbol-defs.svg#icon-cc-amex"></use>
+              </svg>
+              <svg class="icon icon--sm icon--light footer__logo">
+                <use href="./assets/icons/symbol-defs.svg#icon-cc-paypal"></use>
+              </svg>
+              <svg class="icon icon--sm icon--light footer__logo">
+                <use href="./assets/icons/symbol-defs.svg#icon-cc-visa"></use>
+              </svg>
+              <svg class="icon icon--sm icon--light footer__logo">
+                <use
+                  href="./assets/icons/symbol-defs.svg#icon-cc-mastercard"
+                ></use>
+              </svg>
+            </div>
+          </section>
+          <section class="footer__section">
+            <div class="decorated-heading footer__heading">
+              <h3 class="h4 decorated-heading__heading">Our Location</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 624 65"
+                class="decorated-heading__decoration decorated-heading__decoration--sm decorated-heading__decoration--light"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: currentColor;
+                  }
+                  .shp1 {
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-linecap: round;
+                    stroke-width: 4;
+                  }
+                </style>
+                <g id="Layer 1">
+                  <g id="decoration 4 1 ">
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M147.82 43.87L-3.24 41.87L147.82 39.87C148.92 39.85 149.83 40.74 149.85 41.84C149.86 42.94 148.98 43.85 147.87 43.87C147.86 43.87 147.83 43.87 147.82 43.87Z"
+                      />
+                    </g>
+                    <g id="&lt;Group&gt;">
+                      <path
+                        id="&lt;Path&gt;"
+                        class="shp0"
+                        d="M474.42 39.87L625.47 41.87L474.42 43.87C473.31 43.88 472.4 43 472.39 41.89C472.37 40.79 473.26 39.88 474.36 39.87C474.38 39.87 474.4 39.87 474.42 39.87Z"
+                      />
+                    </g>
+                    <path
+                      id="&lt;Path&gt;"
+                      class="shp1"
+                      d="M147.82 41.87L236.8 41.87C237.86 41.87 238.88 41.45 239.63 40.7L251.15 29.17C252.71 27.61 255.24 27.61 256.81 29.17L286.46 58.83C288.02 60.39 290.55 60.39 292.12 58.83L306.96 43.98C308.52 42.42 308.52 39.89 306.96 38.33L297.48 28.85C295.92 27.29 293.39 27.29 291.82 28.85L282.98 37.69C281.42 39.25 281.42 41.79 282.98 43.35L285.63 45.99C287.19 47.56 289.72 47.56 291.28 45.99L294.11 43.16C295.68 41.6 295.68 39.07 294.11 37.5L284.67 28.06L278.16 21.56C276.6 19.99 274.07 19.99 272.51 21.56L260.85 33.22L254.29 39.77C252.72 41.34 252.73 43.89 254.31 45.45L255.75 46.86C257.31 48.4 259.83 48.4 261.38 46.84L289.14 19.08L301.17 7.06C302.73 5.5 305.26 5.5 306.82 7.06L317.66 17.89C319.22 19.45 319.22 21.99 317.66 23.55L311.12 30.09L304.58 23.55C303.01 21.99 303.01 19.45 304.58 17.89L315.41 7.06C316.97 5.5 319.51 5.5 321.07 7.06L333.09 19.08L360.85 46.84C362.4 48.4 364.92 48.4 366.49 46.86L367.92 45.45C369.5 43.89 369.51 41.34 367.94 39.77L361.39 33.22L349.73 21.56C348.17 19.99 345.63 19.99 344.07 21.56L337.56 28.06L328.12 37.5C326.56 39.07 326.56 41.6 328.12 43.16L330.95 45.99C332.52 47.56 335.05 47.56 336.61 45.99L339.25 43.35C340.82 41.79 340.82 39.25 339.25 37.69L330.41 28.85C328.85 27.29 326.32 27.29 324.75 28.85L315.28 38.33C313.71 39.89 313.71 42.42 315.28 43.98L330.12 58.83C331.68 60.39 334.21 60.39 335.78 58.83L365.43 29.17C366.99 27.61 369.52 27.61 371.09 29.17L382.61 40.7C383.36 41.45 384.38 41.87 385.44 41.87L474.42 41.87"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <address class="footer__address">
+              19th Paradise Street Sitia<br />
+              128 Meserole Avenue
+            </address>
+            <div class="footer__logos">
+              <a href="#">
+                <svg class="icon icon--xs icon--light footer__logo">
+                  <use
+                    href="./assets/icons/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon icon--xs icon--light footer__logo">
+                  <use href="./assets/icons/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon icon--xs icon--light footer__logo">
+                  <use href="./assets/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon icon--xs icon--light footer__logo">
+                  <use href="./assets/icons/symbol-defs.svg#icon-trello"></use>
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

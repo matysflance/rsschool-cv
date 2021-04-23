@@ -1,0 +1,323 @@
+.about {
+	background-image: url("/assets/images/bg-about-pattern.png"),
+      linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+	padding-top: rem(40px);
+	padding-bottom: rem(40px);
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__about {
+		flex: 0 0 45%;
+		padding: rem(55px) rem(15px) rem(25px) rem(95px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__heading {
+		color: $primary-color;
+
+		&-decoration {
+			margin-top: rem(10px);
+		}
+	}
+
+	&__text {
+		line-height: 1.4;
+		text-align: center;
+		margin-top: rem(25px);
+	}
+
+	&__portrait {
+		margin-top: rem(40px);
+		transform: translateX(rem(25px));
+	}
+	
+	&__image-wrapper {
+		flex: 0 0 auto;
+	}
+}
+
+
+.ingredients {
+	background-image: url("/assets/images/bg-ingredients.jpg");
+	background-position: center;
+	background-size: cover;
+	color: $white;
+
+	&__wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__content {
+		padding: rem(70px);
+		background-color: rgba($dark-color, .67);
+		width: 47%;
+	}
+
+	&__text {
+		text-align: center;
+		margin-top: rem(35px);
+	}
+
+	&__ingredients {
+		margin-top: rem(60px);
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__ingredient {
+		width: rem(105px);
+		height: rem(105px);
+		border-radius: 50%;
+		border: 5px solid rgba($white, .09);
+	}
+}
+
+
+.menu {
+	background-image: url("/assets/images/bg-menu-pattern.png"),
+      linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+			
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	&__section {
+		flex: 0 1 38%;
+		margin-bottom: rem(30px);
+
+		&:last-child {
+			margin-top: -95px;
+		}
+	}
+
+	&__heading {
+		color: $primary-color;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		list-style: none;
+		// width: 450px;
+		padding: rem(4px) rem(10px);
+		margin-bottom: rem(20px);
+		position: relative;
+
+		&--featured {
+			border: 1px solid $primary-color;
+			border-bottom-color: transparent;
+		}
+
+		&-promo-label {
+			align-self: center;
+			min-width: rem(70px);
+			background-color: $primary-color;
+			color: $white;
+			font-size: rem(14px);
+			font-family: $font-primary;
+			text-align: center;
+			padding: 0 rem(5px);
+			position: absolute;
+			right: -1px;
+			top: 0;
+			transform: translateY(-100%);
+			border: 1px solid $primary-color;
+		}
+
+		&-heading {
+			color: $primary-color;
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: rem(5px);
+			border-bottom: 1px solid $primary-color;
+			margin-bottom: rem(9px);
+		}
+
+		&-name {
+
+		}
+
+		&-price {
+
+		}
+
+		&-description {
+
+		}
+	}
+}
+
+
+.reviews {
+	background-image: url("/assets/images/bg-reviews.jpg");
+	background-position: center;
+	background-size: cover;
+	color: $white;
+	display: grid;
+	place-items: center;
+
+	&__content {
+		background-color: rgba($dark-color, .67);
+		width: 48%;
+		padding: rem(70px);
+		padding-bottom: rem(100px);
+	}
+
+	&__quote {
+		font-family: $font-navbar;
+		font-weight: 700;
+		font-size: rem(24px);
+		line-height: 1.9;
+		letter-spacing: 1px;
+		position: relative;
+
+		&::before {
+			content: "\201C";
+			position: absolute;
+			top: rem(30px);
+			left: rem(-40px);
+			font-size: rem(80px);
+			opacity: .4;
+			line-height: 0;
+		}
+	}
+
+	&__author {
+		font-size: rem(20px);
+		text-align: center;
+		margin-top: rem(30px);
+
+		&::before {
+			content: "-";
+			margin-right: rem(10px);
+		}
+	}
+}
+
+
+.reservation {
+	background-image: url("/assets/images/bg-about-pattern.png"),
+      linear-gradient(to right, rgba(255, 255, 255, .2), rgba(0, 0, 0, .08));
+	padding-top: rem(100px);
+	padding-bottom: rem(100px);
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__images {
+		display: flex;
+		flex: 0 0 auto;
+
+		img + img {
+			margin-left: rem(30px);
+		}
+	}
+
+	&__content {
+		flex: 1;
+		padding-left: rem(100px);
+		padding-right: rem(100px);
+		text-align: center;
+	}
+
+	&__text {
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+
+		p + p {
+			margin-top: rem(10px);
+		}
+	}
+
+	&__form {
+		&-fields {
+			margin-top: rem(35px);
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			/* This is better for small screens, once min() is better supported */
+			/* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+			grid-gap: rem(25px);
+		}
+	}
+
+	&__submit {
+		margin-top: rem(30px);
+	}
+}
+
+.form {
+	font-family: $font-forms;
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		text-align: left;
+		color: $primary-color;
+		font-weight: 700;
+		font-size: rem(14px);
+		margin-bottom: rem(5px);
+	}
+
+	&__control {
+		flex: 1;
+		font-style: italic;
+		color: #7c7c7c;
+		padding: rem(3px) rem(10px);
+	}
+}
+
+.footer {
+	background-color: $dark-color;
+	color: $white-color;
+	font-family: $font-primary-alt;
+	
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(200px, 1fr));
+		column-gap: rem(50px);
+	}
+
+	&__section {
+		text-align: center;
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__heading {
+		color: $white-color;
+	}
+
+	&__opening-days {
+		font-weight: 700;
+	}
+
+	&__logos {
+		margin-top: auto;
+	}
+
+	&__logo {
+		margin-left: rem(4px);
+		margin-right: rem(4px);
+	}
+
+	&__address {
+		font-style: normal;
+		font-weight: 700;
+	}
+}
