@@ -685,15 +685,17 @@
                   class="form__control"
                   placeholder="your name *"
                   id="booking-name"
+                  required
                 />
               </div>
               <div class="form-group form__group">
                 <label for="booking-email" class="form__label">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   class="form__control"
                   placeholder="your email *"
                   id="booking-email"
+                  required
                 />
               </div>
               <div class="form-group form__group">
@@ -703,19 +705,18 @@
                   class="form__control"
                   placeholder="date *"
                   id="booking-date"
+                  required
                 />
               </div>
               <div class="form-group form__group">
                 <label for="booking-party-number" class="form__label"
                   >Party number</label
                 >
-                <!-- <input
-                  type="text"
-                  class="form__control"
-                  placeholder="party number"
+                <select
                   id="booking-party-number"
-                /> -->
-                <select name="" id="" class="form__control">
+                  class="form__control"
+                  required
+                >
                   <option value="">Party number</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
