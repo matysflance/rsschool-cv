@@ -512,6 +512,10 @@ h6, .h6 {
   color: #fff;
 }
 
+.footer__opening-days {
+  font-weight: 700;
+}
+
 .footer__logos {
   margin-top: auto;
 }
